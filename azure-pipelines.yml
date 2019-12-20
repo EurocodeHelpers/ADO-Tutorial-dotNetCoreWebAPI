@@ -38,3 +38,14 @@ steps:
 #Publish artifact. 
 - task: PublishBuildArtifacts@1
   displayName: 'publish artifacts'
+
+- task: GitHubRelease@1
+  inputs:
+    gitHubConnection: 'github.com_EurocodeHelpers'
+    repositoryName: 'EurocodeHelpers/WebAPIAzureDevOpsExample'
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'gitTag'
+    releaseNotesFilePath: 'Does this even work?'
+    changeLogCompareToRelease: 'lastFullRelease'
+    changeLogType: 'commitBased'
