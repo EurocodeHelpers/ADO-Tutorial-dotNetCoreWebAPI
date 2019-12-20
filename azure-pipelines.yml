@@ -46,7 +46,7 @@ steps:
     action: 'create'
     target: '$(Build.SourceVersion)'
     tagSource: 'userSpecifiedTag'
-    tag: 'hello'
+    tag: '$(Build.SourceVersion)'
     addChangeLog: false
 
 - task: ArchiveFiles@2
