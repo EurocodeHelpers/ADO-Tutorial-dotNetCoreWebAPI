@@ -45,7 +45,6 @@ steps:
     repositoryName: 'EurocodeHelpers/WebAPIAzureDevOpsExample'
     action: 'create'
     target: '$(Build.SourceVersion)'
-    tagSource: 'gitTag'
-    releaseNotesFilePath: 'Does this even work?'
-    changeLogCompareToRelease: 'lastFullRelease'
-    changeLogType: 'commitBased'
+    tagSource: 'userSpecifiedTag'
+    tag: 'hello'
+    addChangeLog: false
