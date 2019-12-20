@@ -44,7 +44,7 @@ steps:
     gitHubConnection: 'github.com_EurocodeHelpers'
     repositoryName: 'EurocodeHelpers/WebAPIAzureDevOpsExample'
     action: 'create'
-    target: '$(Build.SourceVersion)'
+    target: 'hihihihihi'
     tagSource: 'userSpecifiedTag'
     tag: '$(Build.SourceVersion)'
     addChangeLog: false
